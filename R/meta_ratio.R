@@ -59,7 +59,8 @@ meta_ratio <- function(data,
   }
 
   # Study labels and subgroup
-  study_labels <- if (!is.null(studylab)) data[[studylab]] else paste0("Study_", seq_len(nrow(data)))
+  #study_labels <- if (!is.null(studylab)) data[[studylab]] else paste0("Study_", seq_len(nrow(data)))
+  study_labels <- paste0("Study_", seq_len(nrow(data)))
   subgroup_var <- if (!is.null(subgroup)) data[[subgroup]] else NULL
 
   # Model type
